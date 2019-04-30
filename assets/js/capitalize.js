@@ -12,6 +12,17 @@
  * @param  {string} input строка с произвольным предложением.
  * @return {string}
  */
-function capitalize(input) {
+function capitalize(input) 
+{
+    //input = prompt("enter abc");
+    let b = '';
 
+        for (let i = 0; i < input.length; i++) 
+        {
+            b += (input[i - 1] == ' ') ? input[i].toUpperCase() : input[i];
+        }
+
+        return b;
 }
+let result = capitalize('А роза упала на лапу Азора');
+console.log(result);

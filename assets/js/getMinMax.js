@@ -16,4 +16,19 @@
  */
 function getMinMax(input) {
 
-}
+
+    //формируем массив из чисел входящей строки input
+    
+  
+   let numbers = ['Infinity', 4, 2.7, -1028];
+  
+    let max = Math.max(...numbers);
+    let min = Math.min(...numbers);
+  
+    return {
+      min,
+      max
+    }
+  }
+  const result = getMinMax('To Infinity and beyond", - repeated Buzz Lightyear 4 times in a row, то есть 2.7 и -1028');
+  console.log(result);

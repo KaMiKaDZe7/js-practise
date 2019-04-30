@@ -11,6 +11,16 @@
  * @param  {number} b любое целое число
  * @return {number}
  */
-function multiple(a, b) {
 
+function multiple(a, b) {
+    var res = 0;
+
+    if (b < 0) a = -a;
+
+    for (let i = 0; i < Math.abs(b); i++) {
+        res = res + a;
+    }
+    //console.log(res);
 }
+
+multiple(-2, 5); 
